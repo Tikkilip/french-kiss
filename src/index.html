@@ -7,47 +7,101 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
-        <div class="header__logo">
-          <img src="/src/assets/images/logo.png" alt="logo">
-        </div>
-        <div class="header__main">
-          <div class="header__main-top">
-            <div class="header__main-top-left">
-              <a class="shop" href="#">Интернет магазин</a>
-              <a class="tel" href="tel:+7(999)3337604">+7(999)3337604</a>
-              <div class="links">
-                <a href="#"><img src="/src/assets/images/ico_mail.svg" alt="email icon"></a>
-                <a href="#"><img src="/src/assets/images/ico_viber.svg" alt="viber icon"></a>
+      <header class="header main-header">
+        <div class="header__inner">
+          <div class="header__logo">
+            <img src="/src/assets/images/logo.png" alt="logo">
+          </div>
+          <div class="header__main">
+            <div class="header__main-top">
+              <div class="header__main-top-left">
+                <a class="shop" href="#">Интернет магазин</a>
+                <a class="tel" href="tel:+7(999)3337604">+7(999)3337604</a>
+                <div class="links">
+                  <a href="#"><img src="/src/assets/images/ico_mail.svg" alt="email icon"></a>
+                  <a href="#"><img src="/src/assets/images/ico_viber.svg" alt="viber icon"></a>
+                </div>
+              </div>
+              <div class="header__main-top-right">
+                <a href="#">Наш адрес</a>
               </div>
             </div>
-            <div class="header__main-top-right">
-              <a href="#">Наш адрес</a>
+            <div class="header__main-bottom">
+              <ul>
+                <li>
+                  <a href="#">Программы</a>
+                  <ul>
+                    <li><a href="#">Индивидуальные программы</a></li>
+                    <li><a href="#">Сборные программы</a></li>
+                    <li><a href="#">Дни рождения</a></li>
+                    <li><a href="#">Онлайн-экскурсия</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Сертификаты</a></li>
+                <li><a href="#">Вопросы и ответы</a></li>
+                <li><a href="#">Оплата</a></li>
+                <li><a href="#">Отзывы</a></li>
+              </ul>
             </div>
           </div>
-          <div class="header__main-bottom">
-            <ul>
-              <li>
-                <a href="#">Программы</a>
-                <ul>
-                  <li><a href="#">Индивидуальные программы</a></li>
-                  <li><a href="#">Сборные программы</a></li>
-                  <li><a href="#">Дни рождения</a></li>
-                  <li><a href="#">Онлайн-экскурсия</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Сертификаты</a></li>
-              <li><a href="#">Вопросы и ответы</a></li>
-              <li><a href="#">Оплата</a></li>
-              <li><a href="#">Отзывы</a></li>
-            </ul>
+          <div class="header__right">
+            <a href="#" class="phone-icon"><img src="/src/assets/images/ico_phone.svg" alt="phone icon"></a>
+            <a href="#" class="btn header-btn">Расписание</a>
           </div>
-        </div>
-        <div class="header__right">
-          <a href="#" class="phone-icon"><img src="/src/assets/images/ico_phone.svg" alt="phone icon"></a>
-          <a href="#" class="btn header-btn">Расписание</a>
         </div>
       </header>
     </div>
+    <main class="main">
+      <section class="main__banner">
+        <div class="wrapper">
+          <h1>Экскурсии на шоколадную фабрику French Kiss</h1>
+          <p class="main__banner-desc">Если вы желаете провести время с пользой, увлекательно и со вкусом или незабываемо отметить День Рождения ребенка, то шоколадная фабрика French Kiss приглашает вас в увлекательное приключение. Наши профессиональные ведущие проведут для вас интерактивную экскурсию с мастер-классом.</p>
+        </div>
+        <picture>
+          <img src="/src/assets/images/main-banner.png" alt="main page banner">
+        </picture>
+        <div class="wrapper">
+          <div class="main__video">
+            <div class="main__video-text">
+              <p>Наши программы подойдут для детей, школьных групп и семейного досуга. С нами вы можете провести корпаротивы, дни рождения, семейные праздники.</p>
+              <p>Наши ведущие создадут праздничную атмосферу. А наши кондитеры будут рады рады вашим улыбкам и делятся с вами секретами изготовления шоколада.</p>
+            </div>
+            <div class="main__video-video">
+              <iframe class="video" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+            </div>
+          </div>
+          <div class="main__banner-welcome">
+            <picture class="welcome-1">
+              <img src="/src/assets/images/welcome-left.png" alt="willy wonka picture">
+            </picture>
+            <h2>В гостях у Вилли Вонки</h2>
+            <p>Погрузитесь в мир приключений с Вилли Вонкой. Программа  подарит эмоции и впечатления и море фотографий, которые будут напоминать об этом событии !</p>
+            <picture class="welcome-2">
+              <img src="/src/assets/images/welcome-right.png" alt="willy wonka picture">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <div class="wrapper">
+        <section class="main__programms">
+          <div class="swiper main-swiper">
+            <div class="main-swiper__top">
+              <h3>Наши программы</h3>
+              <div class="swiper-navigation">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture>
+                  <img src="/src/assets/images/main-swiper-1.png" alt="swiper image">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>  
+    </main>
   </body>
 </html>
