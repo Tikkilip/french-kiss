@@ -68,6 +68,20 @@ h2 {
 	@include flexAicJcc;
 }
 
+.swiper-navigation {
+	.swiper-button-prev {
+		&::after {
+			content: url("/src/assets/images/swiper-arrow.svg");
+			transform: rotate(180deg);
+		}
+	}
+	.swiper-button-next {
+		&::after {
+			content: url("/src/assets/images/swiper-arrow.svg");
+		}
+	}
+}
+
 .header {
 	&.main-header {
 		margin-bottom: 40px;
@@ -239,4 +253,5 @@ h2 {
 			top: 0;
 		}
 	}
+	
 }
