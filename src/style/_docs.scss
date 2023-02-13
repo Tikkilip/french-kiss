@@ -1,0 +1,58 @@
+.docs {
+    h1 {
+        margin-bottom: 45px;
+    }
+    .main__docs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 40px;
+        & > a {
+            background-image: url("/src/assets/images/docs.png");
+            background-repeat: no-repeat;
+            height: 210px;
+            display: block;
+            padding: 20px;
+            max-width: 287px;
+            & > object {
+                @include flexCol;
+                justify-content: space-between;
+                height: 100%;
+            }
+        }
+        .docs__top {
+            @include flexAicSb;
+            justify-content: flex-start;
+            gap: 15px;
+            margin-bottom: 35px;
+            span {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 20px;
+                color: $brownLight;
+            }
+        }
+        .docs__info {
+            margin-bottom: 30px;
+            p {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                color: $dark;
+            }   
+        }
+        .docs__download {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 20px;
+            color: $purpleDark;
+            position: relative;
+            padding-left: 30px;
+            &::before {
+                content: url("/src/assets/images/ico_download.svg");
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+}

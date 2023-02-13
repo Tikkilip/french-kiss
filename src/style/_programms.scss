@@ -1,0 +1,43 @@
+.programms {
+    h1 {
+        margin-bottom: 45px;
+    }
+    .main__programms {
+        .main__programms-options {
+            margin-bottom: 30px;
+            @include flexAicSb;
+            .tabs {
+                @include flexAicJcc;
+                justify-content: flex-start;
+                gap: 25px;
+                a {
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 160.19%;
+                    color: $brownLight;
+                    border-bottom: 1px solid $brownLight;
+                    &.active {
+                        color: $dark;
+                        border-bottom: 1px solid $dark;
+                    }
+                }
+            }
+            .link {
+                a {
+                    color: $purpleDark;
+                    border-bottom: 1px dashed $purpleDark;
+                    padding-bottom: 5px;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 160.19%;
+                }
+            }
+        }
+        .main__programms-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 30px;
+            column-gap: 25px;
+        }
+    }
+}

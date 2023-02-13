@@ -1,4 +1,4 @@
-import "@babel/polyfill";
-import "./index.html";
+import "./404.html";
 import "./index.scss";
 import "./modules/swipers";
+import "@babel/polyfill";

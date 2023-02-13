@@ -1,0 +1,40 @@
+.route {
+    .main__route-block {
+        @include flexAicSb;
+        gap: 25px;
+        margin-bottom: 60px;
+        h1 {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        img {
+            max-width: 548px;
+        }
+        ul {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 160.19%;
+            color: $light;
+        }
+        li {
+            list-style-type: disc;
+            margin-bottom: 5px;
+            max-width: 548px;
+            &:first-of-type {
+                margin-top: 10px;
+            }
+        }
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+            li {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 160.19%;
+                color: $light;
+            }
+        }
+        h2 {
+            text-align: left;
+        }
+    }
+}

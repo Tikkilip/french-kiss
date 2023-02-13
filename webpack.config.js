@@ -3,9 +3,7 @@ const HTMLWebpackPlugin = require("html-webpack-plugin");
 const autoprefixer = require("autoprefixer");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const pages = [
-  "index",
-];
+const pages = ["index", "programms", "q&a", "docs", "agencies", "payment", "reviews", "route", "404"];
 
 module.exports = {
   mode: "development",
