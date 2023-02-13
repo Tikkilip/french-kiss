@@ -1,0 +1,125 @@
+.excursions {
+	.route-info {
+		max-width: 548px;
+		h1 {
+			margin-bottom: 5px;
+		}
+		.exc-subtitle {
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 160.19%;
+			color: $brownLight;
+			margin-bottom: 30px;
+		}
+		p:first-of-type {
+			margin-bottom: 10px;
+		}
+		p:last-of-type {
+			margin-bottom: 30px;
+		}
+		.exc-btns {
+			@include flexAicJcc;
+			justify-content: flex-start;
+			gap: 20px;
+			a {
+				max-width: 162px;
+				width: 100%;
+				height: 50px;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 160.19%;
+				color: $dark;
+				&.feedback {
+					border: 1px solid $dark;
+					border-radius: 5px;
+					height: 47px;
+					@include flexAicJcc;
+				}
+			}
+		}
+	}
+	:nth-child(even) {
+		li {
+			margin-left: 10px;
+		}
+		ul li {
+			margin-left: 30px;
+		}
+	}
+	.cake-description {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 160.19%;
+		color: #5E4E43;
+		margin-bottom: 30px;
+	}
+	.main__route-block:last-of-type {
+		margin-bottom: 30px;
+	}
+	.main__exc-info {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		div {
+			padding-left: 30px;
+			&:not(:first-of-type) {
+				border-left: 1px solid $light;
+			}
+			p {
+				font-weight: 600;
+				font-size: 24px;
+				line-height: 160.19%;
+				color: $dark;
+			}
+			span {
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 160.19%;
+				color: $light;
+			}
+		}
+	}
+	.main__price {
+		h2 {
+			margin-bottom: 25px;
+		}
+		div {
+			display: grid;
+			grid-template-columns: 1fr 2fr 2fr;
+			margin-bottom: 15px;
+			&:first-of-type {
+				margin-bottom: 20px;
+				p:not(:first-of-type) {
+					border-bottom: 1px solid $brownLight;
+					padding-bottom: 5px;
+				}
+			}
+			p {
+				font-weight: 600;
+				font-size: 24px;
+				line-height: 160.19%;
+				color: $dark;
+			}
+			p:not(:first-of-type) {
+				text-align: center;
+			}
+			p:first-of-type {
+				padding-left: 10px;
+				font-size: 20px;
+			}
+			span {
+				text-align: center;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 160.19%;
+				color: $light;
+			}
+		}
+	}
+	.main__qa {
+		span {
+			a {
+				color: $purpleDark;
+			}
+		}
+	}
+}

@@ -426,6 +426,10 @@ main {
   height: 44px;
   margin: 0 auto;
   margin-top: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160.19%;
+  color: #221207;
 }
 .reviews-swiper .swiper-wrapper {
   padding: 0 5px;
@@ -1478,4 +1482,158 @@ main {
   height: 50px;
   margin: 0 auto;
   margin-bottom: 80px;
+}
+
+.excursions .route-info {
+  max-width: 548px;
+}
+.excursions .route-info h1 {
+  margin-bottom: 5px;
+}
+.excursions .route-info .exc-subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 160.19%;
+  color: #8F7B6C;
+  margin-bottom: 30px;
+}
+.excursions .route-info p:first-of-type {
+  margin-bottom: 10px;
+}
+.excursions .route-info p:last-of-type {
+  margin-bottom: 30px;
+}
+.excursions .route-info .exc-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 20px;
+}
+.excursions .route-info .exc-btns a {
+  max-width: 162px;
+  width: 100%;
+  height: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160.19%;
+  color: #221207;
+}
+.excursions .route-info .exc-btns a.feedback {
+  border: 1px solid #221207;
+  border-radius: 5px;
+  height: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.excursions :nth-child(even) li {
+  margin-left: 10px;
+}
+.excursions :nth-child(even) ul li {
+  margin-left: 30px;
+}
+.excursions .cake-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160.19%;
+  color: #5E4E43;
+  margin-bottom: 30px;
+}
+.excursions .main__route-block:last-of-type {
+  margin-bottom: 30px;
+}
+.excursions .main__exc-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.excursions .main__exc-info div {
+  padding-left: 30px;
+}
+.excursions .main__exc-info div:not(:first-of-type) {
+  border-left: 1px solid #5E4E43;
+}
+.excursions .main__exc-info div p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 160.19%;
+  color: #221207;
+}
+.excursions .main__exc-info div span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160.19%;
+  color: #5E4E43;
+}
+.excursions .main__price h2 {
+  margin-bottom: 25px;
+}
+.excursions .main__price div {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  margin-bottom: 15px;
+}
+.excursions .main__price div:first-of-type {
+  margin-bottom: 20px;
+}
+.excursions .main__price div:first-of-type p:not(:first-of-type) {
+  border-bottom: 1px solid #8F7B6C;
+  padding-bottom: 5px;
+}
+.excursions .main__price div p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 160.19%;
+  color: #221207;
+}
+.excursions .main__price div p:not(:first-of-type) {
+  text-align: center;
+}
+.excursions .main__price div p:first-of-type {
+  padding-left: 10px;
+  font-size: 20px;
+}
+.excursions .main__price div span {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160.19%;
+  color: #5E4E43;
+}
+.excursions .main__qa span a {
+  color: #9C69E2;
+}
+
+.certificates.excursions .route-info .exc-btns a {
+  max-width: 210px;
+}
+
+.certificates .route-info ul {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160.19%;
+  color: #221207;
+}
+.certificates .route .main__route-block:nth-child(even) {
+  margin-bottom: 30px;
+}
+.certificates .main__purchase h2 {
+  margin-bottom: 15px;
+}
+.certificates .main__purchase p {
+  margin-bottom: 15px;
 }

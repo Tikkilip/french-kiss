@@ -1,4 +1,4 @@
-import "./q&a.html";
+import "./excursions.html";
 import "./index.scss";
 import "./modules/swipers";
 import "@babel/polyfill";

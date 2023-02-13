@@ -1,0 +1,27 @@
+.certificates.excursions {
+	.route-info .exc-btns a {
+		max-width: 210px;
+	}
+}
+
+.certificates {
+	.route-info {
+		ul {
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 160.19%;
+			color: $dark;
+		}
+	}
+	.route .main__route-block:nth-child(even) {
+		margin-bottom: 30px;
+	}
+	.main__purchase {
+		h2 {
+			margin-bottom: 15px;
+		}
+		p {
+			margin-bottom: 15px;
+		}
+	}
+}
