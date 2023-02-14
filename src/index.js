@@ -2,6 +2,7 @@ import "@babel/polyfill";
 import "./index.html";
 import "./index.scss";
 import "./modules/swipers";
+import "./modules/adaptive";
 
 const tabs = document.querySelectorAll(".main__schedule-options a");
 

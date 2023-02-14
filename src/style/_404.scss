@@ -18,3 +18,16 @@
         margin-bottom: 80px;
     }
 }
+
+@media (max-width: 768px) {
+    .err-page h1 {
+        font-size: 30px;
+    }
+    .err-page .btn {
+        font-size: 14px;
+        height: 42px;
+    }
+    .err-page .wrapper {
+        margin-top: 120px;
+    }
+}

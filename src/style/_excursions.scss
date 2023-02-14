@@ -34,6 +34,16 @@
 					border-radius: 5px;
 					height: 47px;
 					@include flexAicJcc;
+					&:hover {
+						background: rgba(235, 225, 249, 0.5);
+						color: $light;
+						border: 1px solid $light;
+					}
+					&:active {
+						background: rgba(235, 225, 249, 0.5);
+						color: $purpleDark;
+						border: 1px solid $purpleDark;
+					}
 				}
 			}
 		}

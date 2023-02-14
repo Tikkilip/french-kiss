@@ -41,3 +41,24 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .programms .main__programms .main__programms-options {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .programms .main__programms .main__programms-options .tabs {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .programms .main__programms .main__programms-options .tabs a {
+        font-size: 18px;
+    }
+    .programms .main__programms .main__programms-content {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 15px;
+    }
+    .programms .main__programms .main__programms-options .link a {
+        font-size: 18px;
+    }
+}

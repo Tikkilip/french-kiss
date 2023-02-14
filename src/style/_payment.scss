@@ -39,3 +39,27 @@ ul {
     margin-bottom: 30px;
 }
 }
+
+@media (max-width: 768px) {
+    .agencies.payment .title-info {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .agencies.payment .title-info:first-of-type {
+        margin-bottom: 15px;
+    }
+    .agencies.payment .subtitle {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .agencies.payment ul {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .agencies.payment .main__docs {
+        grid-template-rows: 1fr 1fr;
+    }
+    .agencies.payment .title-info:last-of-type {
+        margin-bottom: 30px;
+    }
+}

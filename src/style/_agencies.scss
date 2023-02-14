@@ -11,3 +11,28 @@
         padding-left: 20px;
     }
 }
+
+@media (max-width: 768px) {
+    .agencies ul li {
+        font-size: 14px;
+    }
+    .docs h1 {
+        margin-bottom: 30px;
+    }
+    .agencies ul {
+        margin-bottom: 30px;
+    } 
+    .docs .main__docs {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .docs .main__docs .docs__info p {
+        font-size: 18px;
+    }
+    .docs .main__docs .docs__download {
+        font-size: 14px;
+    }
+   /*  .docs .main__docs > a {
+        background: url("/src/assets/images/m_docs.png");
+    } */
+}

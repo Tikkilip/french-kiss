@@ -33,10 +33,12 @@
                 <li>
                   <a href="#">Программы</a>
                   <ul>
-                    <li><a href="#">Индивидуальные программы</a></li>
-                    <li><a href="#">Сборные программы</a></li>
-                    <li><a href="#">Дни рождения</a></li>
-                    <li><a href="#">Онлайн-экскурсия</a></li>
+                    <div class="wrapper">
+                      <li><a href="#">Индивидуальные программы</a></li>
+                      <li><a href="#">Сборные программы</a></li>
+                      <li><a href="#">Дни рождения</a></li>
+                      <li><a href="#">Онлайн-экскурсия</a></li>
+                    </div>
                   </ul>
                 </li>
                 <li><a href="#">Сертификаты</a></li>
@@ -49,6 +51,12 @@
           <div class="header__right">
             <a href="#" class="phone-icon"><img src="assets/ico_phone.svg" alt="phone icon" /></a>
             <a href="#" class="btn header-btn">Расписание</a>
+            <div class="menu-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="menu"></div>
           </div>
         </div>
       </header>
@@ -60,6 +68,7 @@
         <a href="/" class="btn">Вернуться на главную</a>
       </div>
       <picture>
+        <source media="(max-width: 768px)" srcset="assets/m_404.png">
         <img src="assets/404.png" alt="404 image" />
       </picture>
     </main>
