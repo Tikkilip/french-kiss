@@ -67,6 +67,7 @@ h3 {
 h1, h2, h3 {
 	font-family: 'Forum';
 	font-weight: 400;
+	color: $dark;
 }
 
 section {
@@ -147,10 +148,6 @@ main {
 		padding: 0 5px;
 	}
 	.swiper-slide {
-		max-width: 452px;
-		box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
-		border-radius: 10px;
-		padding: 20px 15px;
 		.reviews__top {
 			@include flexAicSb;
 			span {
@@ -174,6 +171,12 @@ main {
 			color: $light;
 		}
 	}
+}
+
+.reviews-swiper .main__swiper-inner {
+	box-shadow: 0px 1px 10px rgb(0 0 0 / 10%);
+	border-radius: 10px;
+	padding: 20px 15px;
 }
 
 .header {
@@ -207,6 +210,12 @@ main {
 			@include flexAicSb;
 			width: 100%;
 			.header__main-top-left {
+				a:hover {
+					color: $purpleDark;
+					path {
+						fill: $purpleDark !important;
+					}
+				}
 				@include flexAicSb;
 				gap: 25px;
 				.shop {
@@ -228,6 +237,9 @@ main {
 			.header__main-top-right {
 				a {
 					color: $purpleDark;
+					&:hover {
+						color: #7441BA;
+					}
 				}
 			}
 		}
@@ -242,6 +254,14 @@ main {
 				@include flexAicSb;
 			}	
 		}
+	}
+
+	.phone-icon:hover rect {
+		fill: $hoverBtn;
+	}
+
+	.phone-icon:active rect {
+		fill: $activeBtn;
 	}
 
 	.header__right {
@@ -398,9 +418,6 @@ main {
 		}
 	}
 	.main__programms {
-		.swiper-slide {
-			max-width: 452px;
-		}
 		h3 {
 			margin-bottom: 30px;
 		}
@@ -591,6 +608,9 @@ main {
 			li:last-of-type {
 				a {
 					text-decoration: underline;
+					&:hover {
+						color: $purpleDark;
+					}
 				}
 			}
 		}
@@ -598,13 +618,16 @@ main {
 	.footer__right {
 		.footer__right-top {
 			@include flexCol;
-			align-items: flex-end;
+			align-items: center;
 			gap: 10px;
 			a {
 				font-weight: 400;
 				font-size: 16px;
 				line-height: 20px;
-				color: #221207;
+				color: $dark;
+				&:hover {
+					color: $purpleDark;
+				}
 			}
 		}
 		.footer__right-bot {
@@ -615,6 +638,11 @@ main {
 			a {
 				max-width: 20px;
 				max-height: 20px;
+				&:hover {
+					path {
+						fill: $purpleDark !important;
+					}
+				}
 			}
 		}
 	}
@@ -683,32 +711,11 @@ main {
 
 @media (max-width: 1140px) {
 	.wrapper {
-		max-width: 760px;
+		max-width: 94vw;
 	}
 }
 
-@media (max-width: 768px) {
-	h1,
-	.main .main__banner h1 {
-		font-size: 30px;
-		line-height: 110%;
-		max-width: 320px;
-		margin-bottom: 10px;
-	}
-	h2 {
-		font-size: 24px;
-		line-height: 120%;
-	}
-	h3 {
-		font-size: 30px;
-		line-height: 110%;
-	}
-	section {
-		margin-bottom: 25px;
-	}
-	.wrapper {
-		max-width: 320px;
-	}
+@media (max-width: 890px) {
 	.header .header__logo,
 	.phone-icon {
 		z-index: 12;
@@ -759,6 +766,8 @@ main {
 	.header .header__main {
 		flex-direction: column-reverse;
 		padding-top: 75px;
+		justify-content: space-between;
+    height: 70vh;
 	}
 	.header .header__main-bottom ul > li > a {
 		font-weight: 600;
@@ -807,12 +816,12 @@ main {
 		left: 0;
 		z-index: 12;
 		.header__inner {
-			max-width: 320px;
+			max-width: 94vw;
 			margin: 0 auto;
 		}
 	}
 	.main {
-		margin-top: 70px;
+		margin-top: 100px;
 	}
 	.footer {
 		flex-direction: column;
@@ -839,12 +848,63 @@ main {
 	.footer .footer__left {
 		margin-bottom: 15px;
 	}
+	.header.main-header {
+		margin-bottom: 20px;
+	}
+	.main .main__banner-welcome .welcome-2 {
+		max-width: 150px;
+		transform: rotate(10deg);
+		top: 70px;
+    right: -34px;
+	}
+	.main__banner-welcome {
+		overflow: hidden !important;
+	}
+	.main .main__banner-welcome .welcome-1 {
+		opacity: 0.5;
+	}
+}
+
+@media (max-width: 768px) {
+	.main .main__banner-welcome .welcome-2 {
+		top: 54px;
+	}
+	.main__swiper-inner {
+		max-width: 452px;
+		margin: 0 auto;
+	}
+	.reviews-swiper .swiper-slide {
+		max-width: none;
+	}
+	.reviews-swiper {
+		.swiper-navigation .swiper-button-next {
+			left: calc(70% + 41px);
+		}
+		.swiper-navigation .swiper-button-prev {
+			left: calc(70% - 41px);
+		}
+	}
+	h1,
+	.main .main__banner h1 {
+		font-size: 30px;
+		line-height: 110%;
+		max-width: 320px;
+		margin-bottom: 10px;
+	}
+	h2 {
+		font-size: 24px;
+		line-height: 120%;
+	}
+	h3 {
+		font-size: 30px;
+		line-height: 110%;
+	}
+	section {
+		margin-bottom: 25px;
+	}
 	.footer .footer__center ul a {
 		font-size: 14px;
 		line-height: 160%;
-	}
-	.header.main-header {
-		margin-bottom: 20px;
 	}
 	.main p {
 		font-size: 14px;
@@ -863,14 +923,7 @@ main {
 	.main .main__banner-welcome .welcome-1 {
 		display: none;
 	}
-	.main .main__banner-welcome .welcome-2 {
-		max-width: 150px;
-		transform: rotate(10deg);
-		top: 54px;
-    right: -34px;
-	}
 	.main .main__banner-welcome {
-		overflow: hidden !important;
 		padding: 15px 0 20px 0;
 	}
 	.main .main__banner-welcome h2 + p {
@@ -898,10 +951,19 @@ main {
 		font-size: 14px;
 		padding-top: 12px;
 	}
-	/* .swiper-navigation .swiper-button-next {
+	.main-swiper {
+		min-height: 540px;
+	}  
+	.swiper-navigation .swiper-button-next {
 		bottom: 0;
 		top: auto;
-	} */
+		left: calc(50% + 41px);
+	}
+	.swiper-navigation .swiper-button-prev {
+		bottom: -17px;
+		top: auto;
+		left: calc(50% - 41px);
+	}
 	.main__programms {
 		margin-bottom: 85px;
 	}
@@ -971,6 +1033,7 @@ main {
 	.main .main__contacts .main__contacts-content .contacts-info .how-to-get {
 		font-size: 18px;
 		margin-bottom: 20px;
+		max-width: fit-content;
 	}
 	.main .main__contacts .main__contacts-content .contacts-info .callback {
 		font-size: 14px;

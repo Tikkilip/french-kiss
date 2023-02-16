@@ -38,3 +38,24 @@
         }
     }
 }
+
+@media (min-width: 768px) {
+    .main .main__contacts .main__contacts-content {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .route .main__route-block ul {
+        font-size: 14px;
+    }
+    .route .main__route-block h1 {
+        margin-bottom: 15px;
+    }
+    .route .main__route-block li {
+        margin-left: 20px;
+    }
+    .route .main__route-block {
+        margin-bottom: 15px !important;
+    }
+}

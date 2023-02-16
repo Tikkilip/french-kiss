@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		menu.classList.toggle('active');
 	})
 
-	if (document.documentElement.clientWidth < 768 && menu) {
+	if (document.documentElement.clientWidth < 890 && menu) {
 		const headerMain = document.querySelector(".header__main");
 		const headerBtn = document.querySelector(".header-btn");
 

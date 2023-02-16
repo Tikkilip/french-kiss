@@ -42,10 +42,23 @@
     }
 }
 
-@media (max-width: 768px) {
+.programms .main__programms .main__programms-options .link a:hover {
+    color: #7441BA;
+}
+
+@media (max-width: 1024px) {
     .programms .main__programms .main__programms-options {
         flex-wrap: wrap;
         gap: 15px;
+    }
+    .programms .main__programms .main__programms-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .programms .main__programms .main__programms-content picture {
+        text-align: center;
     }
     .programms .main__programms .main__programms-options .tabs {
         flex-wrap: wrap;
@@ -56,7 +69,7 @@
     }
     .programms .main__programms .main__programms-content {
         grid-template-columns: repeat(1, 1fr);
-        row-gap: 15px;
+        row-gap: 20px;
     }
     .programms .main__programms .main__programms-options .link a {
         font-size: 18px;

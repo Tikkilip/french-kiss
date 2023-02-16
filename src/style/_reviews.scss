@@ -35,3 +35,30 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .reviews .main__reviews article span {
+        font-size: 14px;
+    }
+    .reviews .main__reviews article p {
+        font-size: 18px;
+    }
+    .reviews .main__reviews article .main__reviews-top span {
+        font-size: 14px;
+    }
+    .reviews .main__reviews {
+        gap: 10px;
+    }
+    .reviews h1 {
+        margin-bottom: 30px;
+    }
+    .photos-swiper {
+        min-height: 540px;
+    }
+}
+
+@media (max-width: 450px) {
+    .photos-swiper {
+        min-height: 460px;
+    }
+}
