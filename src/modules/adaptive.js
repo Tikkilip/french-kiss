@@ -18,4 +18,17 @@ document.addEventListener("DOMContentLoaded", () => {
 			menu.appendChild(headerBtn);
 		}
 	}
+
+	if (document.documentElement.clientWidth < 768) {
+		const parentBlocks = document.querySelectorAll(".certificates .main__route-block");
+		if (parentBlocks) {
+			parentBlocks.forEach((block) => {
+				let title = block.querySelector(".certificates.excursions .route-info h2");
+				if (title) {
+					title.remove();
+					block.appendChild(title)
+				}
+			})
+		}
+	}
 })

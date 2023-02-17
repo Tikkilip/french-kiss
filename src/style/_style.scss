@@ -709,6 +709,13 @@ main {
   transform: translate(-50%, 0%) rotate(-45deg); 
 }
 
+.main__swiper-inner {
+	max-width: 452px;
+	picture {
+		text-align: center;
+	}
+}
+
 @media (max-width: 1140px) {
 	.wrapper {
 		max-width: 94vw;

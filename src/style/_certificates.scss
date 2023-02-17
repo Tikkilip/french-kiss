@@ -33,7 +33,33 @@
 	color: #5E4E43;
 }
 
+.certificates.excursions .route-info h2 {
+	margin-bottom: 30px;
+	font-size: 40px;
+  line-height: 110%;
+}
+
+.certificates > .main__route {
+	background-color: #FBF9FF;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.certificates .reviews-swiper .main__swiper-inner {
+	max-width: 452px;
+}
+
 @media (max-width: 768px) {
+	.certificates > .main__route {
+		padding-top: 20px;
+		padding-bottom: 0px;
+	}
+	.certificates.excursions h2 {
+		text-align: center;
+		font-size: 30px;
+		margin-bottom: 0px;
+		max-width: 186px;
+	}
 	.route .main__route-block {
 		flex-direction: column-reverse;
 		gap: 15px;
@@ -41,6 +67,9 @@
 	}
 	.route .main__route-block h1 {
 		text-align: center;
+	}
+	.main__purchase {
+		display: none;
 	}
 	.excursions .route-info h1 {
 		margin-bottom: 15px;

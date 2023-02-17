@@ -27,6 +27,7 @@ const swiperReviews = new Swiper(".swiper.reviews-swiper", {
     768: {
       slidesPerView: 2,
       spaceBetween: 25,
+      /* centeredSlides: true, */
     },
   },
   navigation: {
