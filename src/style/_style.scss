@@ -179,6 +179,68 @@ main {
 	padding: 20px 15px;
 }
 
+.main__reviews {
+	.pagination {
+		margin-top: 10px
+	}
+}
+
+@media (max-width: 768px) {
+	.pagination {
+		gap: 10px !important;
+		a {
+			font-size: 18px !important;
+		}
+	}
+	.reviews-swiper {
+		max-width: 380px;
+	}
+}
+
+.pagination {
+	@include flexAicJcc;
+	gap: 20px;
+	margin-top: 40px;
+	width: 100%;
+	a {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 160.19%;
+		color: #8F7B6C;
+		width: 32px;
+		text-align: center;
+		&.active {
+			color: $dark;
+			border-bottom: 1px solid #221207;
+		}
+	}
+	span {
+		margin-bottom: 0 !important;
+	}
+}
+
+.swiper-slide {
+	max-width: 452px;
+}
+
+.swiper-back {
+	position: absolute;
+	right: -2px;
+	z-index: 10;
+	width: 240px;
+	height: 100%;
+	background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0.8) 68.52%, rgba(255, 255, 255, 0) 100%);
+}
+
+@media (max-width: 890px) {
+	.swiper-back {
+		display: none;
+	}
+	.reviews-swiper .main__swiper-inner {
+		max-width: 350px !important;
+	}
+}
+
 .header {
 	&.main-header {
 		margin-bottom: 40px;
@@ -572,10 +634,19 @@ main {
 	}
 }
 
+@media (min-width: 768px) {
+	.route .main__route-block li {
+		margin-left: 24px;
+	}
+}
+
+.footer-border {
+	border-top: 1px solid #80808017;
+}
+
 .footer {
 	@include flexAicSb;
 	align-items: flex-start;
-	border-top: 1px solid #80808017;
 	padding: 20px 0;
 	.footer__left {
 		@include flexCol;
@@ -718,7 +789,7 @@ main {
 
 @media (max-width: 1140px) {
 	.wrapper {
-		max-width: 94vw;
+		margin: 0 20px;
 	}
 }
 
@@ -823,8 +894,7 @@ main {
 		left: 0;
 		z-index: 12;
 		.header__inner {
-			max-width: 94vw;
-			margin: 0 auto;
+			margin: 0 20px;
 		}
 	}
 	.main {
@@ -840,6 +910,9 @@ main {
 	.footer .footer__center ul {
 		max-height: 123px;
 		column-gap: 40px;
+	}
+	.footer .footer__right .footer__right-top {
+		align-items: flex-start;
 	}
 	.footer .footer__right .footer__right-top a {
 		color: $brownLight;
@@ -886,9 +959,11 @@ main {
 	.reviews-swiper {
 		.swiper-navigation .swiper-button-next {
 			left: calc(70% + 41px);
+			bottom: 7px;
 		}
 		.swiper-navigation .swiper-button-prev {
 			left: calc(70% - 41px);
+			bottom: -11px;
 		}
 	}
 	h1,

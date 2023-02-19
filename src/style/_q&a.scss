@@ -41,6 +41,7 @@
         }
         .main__form-content {
             @include flexAicSb;
+            align-items: flex-start;
             form {
                 @include flexCol;
                 gap: 15px;
@@ -125,6 +126,15 @@
     height: 25px;
 }
 
+.qa .main__form .main__form-content form .input-block:not(.checkbox) {
+    font-weight: 600;
+}
+
+.qa .main__form .main__form-content form .input-block.checkbox label {
+    font-weight: 400;
+    color: $brownLight;
+}
+
 @media (max-width: 768px) {
     .qa h1 {
         margin-bottom: 35px;
@@ -132,7 +142,7 @@
     .qa .main__qa .main__qa-block .question {
         font-size: 18px;
         line-height: 120%;
-        max-width: 90vw;
+        max-width: 84vw;
     }
     .qa .main__qa .main__qa-block {
         padding-bottom: 10px;
@@ -165,10 +175,6 @@
     }
     .qa .main__form .main__form-content form .form-top .input-block {
         max-width: unset;
-    }
-    .qa .main__form .main__form-content form .input-block.checkbox label {
-        font-weight: 400;
-        color: $brownLight;
     }
     .qa .main__form .main__form-content form .submit {
         width: 100%;

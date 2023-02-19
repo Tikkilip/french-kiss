@@ -4,6 +4,7 @@
     }
     .main__docs {
         display: grid;
+        justify-items: center;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 20px;
         row-gap: 40px;
@@ -54,5 +55,17 @@
                 left: 0;
             }
         }
+    }
+}
+
+@media (max-width: 1064px) {
+    .main__docs {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .main__docs {
+        grid-template-columns: repeat(1, 1fr) !important;
     }
 }
