@@ -114,6 +114,7 @@
             <h2>В гостях у Вилли Вонки</h2>
             <p>Погрузитесь в мир приключений с Вилли Вонкой. Программа подарит эмоции и впечатления и море фотографий, которые будут напоминать об этом событии !</p>
             <picture class="welcome-2">
+              <source media="(max-width: 768px)" srcset="assets/m_wonka.png">
               <img src="assets/welcome-right.png" alt="willy wonka picture" />
             </picture>
           </div>
@@ -309,6 +310,82 @@
         </section>
       </div>
     </main>
+    <div class="popup callback-popup">
+      <div class="popup-inner qa">
+        <section class="main__form">
+          <div class="main-form__top">
+            <h2>Обратная связь</h2>
+            <a href="#" class="close-btn">
+              <img src="assets/ico_close.svg" alt="close icon">              
+            </a>
+          </div>
+          <div class="main__form-content">
+            <form action="">
+              <div class="input-block">
+                <label for="program">Программа</label>
+                <input type="text" id="program" />
+              </div>
+              <div class="input-block">
+                <label for="tel">Телефон</label>
+                <input type="text" id="tel" />
+              </div>
+              <div class="input-block checkbox">
+                <input type="checkbox" name="agree" id="agree" />
+                <label for="agree">Чтобы оставить заявку, неоходимо согласится на обработкой персональных данных и с правилами бронирования экскурсии.</label>
+              </div>
+              <button type="submit" class="btn submit">Оставить отзыв</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="popup schedule-popup">
+      <div class="popup-inner">
+        <picture>
+          <source media="(max-width: 768px)" srcset="assets/m_popup-sch.png">
+          <img src="assets/popup-sch.png" alt="schedule popup image">
+        </picture>
+      </div>
+    </div>
+    <div class="popup review-popup">
+        <div class="popup-inner qa">
+          <section class="main__form">
+            <div class="main-form__top">
+              <h2>Оставить отзыв</h2>
+              <a href="#" class="close-btn">
+                <img src="assets/ico_close.svg" alt="close icon">              
+              </a>
+            </div>
+            <div class="main__form-content">
+              <form action="">
+                <div class="form-top">
+                  <div class="input-block">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" />
+                  </div>
+                  <div class="input-block">
+                    <label for="E-mail">E-mail</label>
+                    <input type="text" id="E-mail" />
+                  </div>
+                </div>
+                <div class="input-block">
+                  <label for="tel">Телефон</label>
+                  <input type="text" id="tel" />
+                </div>
+                <div class="input-block">
+                  <label for="review">Отзыв</label>
+                  <textarea name="review" id="review"></textarea>
+                </div>
+                <div class="input-block checkbox">
+                  <input type="checkbox" name="agree" id="agree" />
+                  <label for="agree">Чтобы оставить заявку, неоходимо согласится на обработкой персональных данных и с правилами бронирования экскурсии.</label>
+                </div>
+                <button type="submit" class="btn submit">Оставить отзыв</button>
+              </form>
+            </div>
+          </section>
+        </div>
+    </div>
     <div class="footer-border"></div>
     <div class="wrapper">
       <footer class="footer">

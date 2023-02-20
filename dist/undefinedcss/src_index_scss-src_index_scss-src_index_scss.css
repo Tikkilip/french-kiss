@@ -1442,14 +1442,6 @@ main {
   .header.main-header {
     margin-bottom: 20px;
   }
-  .main .main__banner-welcome .welcome-2 {
-    max-width: 150px;
-    -webkit-transform: rotate(10deg);
-        -ms-transform: rotate(10deg);
-            transform: rotate(10deg);
-    top: 70px;
-    right: -34px;
-  }
   .main__banner-welcome {
     overflow: hidden !important;
   }
@@ -1457,9 +1449,102 @@ main {
     opacity: 0.5;
   }
 }
+.review-popup,
+.schedule-popup,
+.callback-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 12;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.popup:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #183744;
+  opacity: 0.3;
+  -webkit-transform-origin: 50% 100%;
+      -ms-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+}
+
+.popup.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.callback-popup .popup-inner {
+  max-width: 400px;
+}
+.callback-popup .popup-inner .submit {
+  width: 100% !important;
+}
+
+.popup-inner {
+  top: 50%;
+  left: 50%;
+  border-radius: 5px;
+  -webkit-transform: translateY(-50%) translateX(-50%) !important;
+      -ms-transform: translateY(-50%) translateX(-50%) !important;
+          transform: translateY(-50%) translateX(-50%) !important;
+  margin: 0;
+  position: absolute;
+  background-color: #FFFFFF;
+  padding: 30px;
+}
+.popup-inner .main__form h2 {
+  margin-bottom: 0 !important;
+}
+.popup-inner .submit {
+  margin-left: auto;
+}
+.popup-inner section {
+  margin-bottom: 0;
+}
+.popup-inner .main-form__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+.popup-inner .main-form__top img {
+  max-width: 40px;
+}
+
+.swiper-navigation .swiper-button-next {
+  top: 19px;
+}
+
 @media (max-width: 768px) {
+  .popup-inner {
+    top: 1%;
+    min-height: 80vh;
+    max-width: unset !important;
+    left: auto;
+    -webkit-transform: none !important;
+        -ms-transform: none !important;
+            transform: none !important;
+  }
   .main .main__banner-welcome .welcome-2 {
-    top: 54px;
+    top: 62px;
   }
   .main__swiper-inner {
     max-width: 452px;
@@ -1469,8 +1554,8 @@ main {
     max-width: none;
   }
   .reviews-swiper .swiper-navigation .swiper-button-next {
-    left: calc(70% + 41px);
-    bottom: 7px;
+    left: calc(70% + 34px);
+    bottom: 6px;
   }
   .reviews-swiper .swiper-navigation .swiper-button-prev {
     left: calc(70% - 41px);
@@ -1525,6 +1610,7 @@ main {
     max-width: 230px;
     z-index: 10;
     position: relative;
+    white-space: break-spaces;
   }
   .main .main__programms h3,
   .main-swiper__top {
@@ -1550,14 +1636,14 @@ main {
     min-height: 540px;
   }
   .swiper-navigation .swiper-button-next {
-    bottom: 0;
+    bottom: 0px;
     top: auto;
-    left: calc(50% + 41px);
+    left: calc(45% + 41px);
   }
   .swiper-navigation .swiper-button-prev {
     bottom: -17px;
     top: auto;
-    left: calc(50% - 41px);
+    left: calc(48% - 41px);
   }
   .main__programms {
     margin-bottom: 85px;
@@ -1671,6 +1757,11 @@ main {
     font-size: 14px;
   }
 }
+@media (max-width: 450px) {
+  .main-swiper {
+    min-height: 500px;
+  }
+}
 .programms h1 {
   margin-bottom: 45px;
 }
@@ -1744,6 +1835,12 @@ main {
   }
 }
 @media (max-width: 768px) {
+  .main__programms {
+    margin-bottom: 30px;
+  }
+  .programms h1 {
+    margin-bottom: 20px;
+  }
   .programms .main__programms .main__programms-content picture {
     text-align: center;
   }
@@ -1907,7 +2004,6 @@ main {
   width: 100%;
 }
 .qa .main__form .main__form-content form .form-top .input-block {
-  max-width: 284px;
   width: 100%;
 }
 .qa .main__form .main__form-content form .form-top input {
@@ -2027,6 +2123,7 @@ main {
 .docs .main__docs > a {
   background-image: url(../assets/docs.png);
   background-repeat: no-repeat;
+  background-size: 100%;
   height: 210px;
   display: block;
   padding: 20px;
@@ -2277,6 +2374,11 @@ main {
 @media (max-width: 450px) {
   .photos-swiper {
     min-height: 460px;
+  }
+}
+@media (max-width: 400px) {
+  .photos-swiper {
+    min-height: 420px;
   }
 }
 .route .main__route-block {
@@ -2561,6 +2663,9 @@ main {
 @media (max-width: 768px) {
   .excursions .route-info .exc-btns {
     margin-bottom: 15px;
+  }
+  .excursions section {
+    margin-bottom: 30px;
   }
 }
 .certificates.excursions .route-info .exc-btns a {

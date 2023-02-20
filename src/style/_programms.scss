@@ -57,6 +57,12 @@
 }
 
 @media (max-width: 768px) {
+    .main__programms {
+        margin-bottom: 30px;
+    }
+    .programms h1 {
+        margin-bottom: 20px;
+    }
     .programms .main__programms .main__programms-content picture {
         text-align: center;
     }
